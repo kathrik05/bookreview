@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Review App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Book Review App</h1>
+  
+  <button id="addBookBtn">Add Book</button>
+  
+  <!-- Book tiles will go here -->
+  <div id="bookList"></div>
+
+  <!-- Modal for more details -->
+  <div id="bookModal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p><strong>Author:</strong> <span id="modalAuthor"></span></p>
+      <p><strong>Release Date:</strong> <span id="modalDate"></span></p>
+      <p><strong>Summary:</strong> <span id="modalSummary"></span></p>
+
+      <h3>Reviews:</h3>
+      <ul id="modalReviews"></ul>
+
+      <h3>Add Review:</h3>
+      <input id="reviewerInput" placeholder="Your name" />
+      <input id="ratingInput" type="number" placeholder="Rating (1-5)" />
+      <input id="commentInput" placeholder="Comment" />
+      <button id="submitReviewBtn">Submit</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
